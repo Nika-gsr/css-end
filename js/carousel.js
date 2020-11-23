@@ -3,6 +3,8 @@ const images = [
     'img/myth.png',
     'img/health.png',
 ];
+
+
 let currentIdx = 0;
 function slide() {
     currentIdx = ++currentIdx > images.length - 1 ? 0 : currentIdx;
