@@ -1,8 +1,8 @@
 const images = [
-    'img/health.png',
-    'img/myth.png',
-    'img/health.png',
+    innerHTML = <img src="img/health.png" class="d-block" alt="health">
+   
 ];
+
 
 
 let currentIdx = 0;
@@ -16,5 +16,5 @@ function back() {
     showSlide(currentIdx);
 }
 function showSlide(idx) {
-    document.querySelector('.carousel img').src = images[idx];
+    document.querySelector('.carousel').img = images[idx];
 }

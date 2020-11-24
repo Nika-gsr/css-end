@@ -217,9 +217,16 @@
 
     .services .card {
          background-color:white;
-        border-top: 5px solid #79a207;
+        /* border-top: 5px solid #79a207; */
         align-items: center;
         text-align: center;
+        border-top: 4px solid var(--titles-color);
+        border-bottom: 4px solid var(--titles-color);
+        border-radius: 5px 5px 5px 5px;
+        text-align: center;
+        background-color: white;
+        height: 600px;
+        margin-bottom: 40px;
     }
 
     .services .card .transparent-button {
@@ -339,28 +346,38 @@
         background-color: whitesmoke;
     }
 
-    .numbers {
-        background-color: var(--accent-color);
-        color: white;
-        font-size: 40px;
-        width: 100%;
-        display: grid;
-        grid-template-columns: 25% 25%  25%  25% ;
-        text-align: center;
-    }
 
-    .numbers p {
-        font-size: 75px;
-        color: wheat;
-        animation: heartBeat; 
-        animation-duration: 2s;
-    }
+    /*results*/
 
-    .numbers .numbers-text {
-        font-size: 20px;
-        color: white;
-        animation: none;
-    }
+.numbers-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    background-color: var(--accent-color);
+    width: 100%;
+}
+
+.box-decoration {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    height: 2px;
+    width: 25px;
+    background-color:white;
+}
+
+.numbers-container h3 {
+    padding-top: 60px;
+    font-weight: bold;
+    font-size: 74px;
+    color: white;
+}
+
+.numbers p {
+    color: wheat;
+    font-size: 20px;
+    padding-bottom: 60px;
+}
 
     .our-company {
         display: flex;
@@ -472,42 +489,96 @@
         background-color: whitesmoke;
     }
 
+    .promotion {
+        padding:70px 0 50px 0;
+        position:relative;
+        font-family:'Cormorant Infant', serif;
+    }
+
+    .promotion .container {
+        display:flex;
+        flex-direction: column;  
+    }
+
+    .promotion .bgc_y {
+        position:absolute;
+        width:100%;
+        height:750px;
+        background: url(img/grey.jpg) center center/cover no-repeat;
+        z-index:-1;
+        top:-50px;
+        left:0
+    }
+        .promotion__text {
+            padding-top: 100px;;
+            font-size: 24px;
+            color: var(--accent-color);
+            width:50%
+        }
+        
+        .promotion__descr {
+            margin-top:40px;
+            font-size:24px;
+            line-height:24px;
+            
+        }
+        .promotion__descr span {
+            font-weight:700;
+            font-size:40px;
+            color: var(--titles-color);
+        }
+        .promotion__timer {
+            width:65%;
+            padding-left: 90px;
+        }
+        .promotion__timer .title {
+            text-align: center;
+            margin-top: 40px;
+            font-size: 24px;
+            color:var(--titles-color);
+        }
+        .promotion__timer .timer {
+            margin-top:10px;
+            display:flex;
+            justify-content:space-between;
+            align-items:center
+        }
+            .promotion__timer .timer__block {
+                width:102px;
+                height:120px;
+                background:#fff;
+                box-shadow: 30px 0px 10px rgba(0,0,0,.25);
+                font-size: 24px;
+                font-weight:300;
+                text-align:center
+            }
+                .promotion__timer .timer__block span {
+                    display:block;
+                    margin-top:20px;
+                    margin-bottom:5px;
+                    font-size:56px;
+                    font-weight:700
+                }
+
     footer nav {
+        padding-top: 20px;
         background-color: var(--accent-color);
-    }
-
-    footer .networks-icons {
-        display: grid;
-        grid-template-columns: 70px 70px 70px;
-        cursor: pointer; 
-    }
-
-    footer nav hr {
-        color: white;
-    }
-
-    footer p {
-        color: whitesmoke;
-        font-size: 26px;
         display: flex;
-        flex-direction: row;
-        justify-content: flex-end;
+        flex-direction: column;
+        align-items: center;
+    
+    }
+    
+    footer .menu-items {
+        color: whitesmoke;
+        font-size: 16px;
+        display: flex;
     }
 
-
-    footer nav .menu-items {
-            display: flex;
-            align-items: center;
-            justify-content: flex-end;
-            flex: 1;
-
-    }
-    footer nav .menu-items a {
-        color: white;
-        display: block;
-        text-decoration: none;
+    footer .menu-items a {
+        color: whitesmoke;
         text-transform: uppercase;
-        border: 3px solid transparent;
+        border: 3px solid var(--accent-color);
         padding: 3px;
     }
 
@@ -515,9 +586,19 @@
         border-color:whitesmoke;
     }
 
+    footer .social {
+        padding-top: 5px;
+    }
+
+    footer nav .coppy_right p {
+        color: whitesmoke;
+    }
+
     .modal p {
         text-align: center;
     }
 
     
+                
+                
 
