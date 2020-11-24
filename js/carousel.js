@@ -1,20 +1,62 @@
 const images = [
-    innerHTML = <img src="img/health.png" class="d-block" alt="health">
+`<a href="blog.html#defect">
+<div class="carousel-item active">
+<img src="img/health.png" class="d-block" alt="health">
+<div class="carousel-caption">
+    
+        <h5>Чи шкідливий кондиціонер для здоров’я?</h5>
+        <p>Значну частину нашого життя ми проводимо в замкнутому просторі:
+            офісі, супермаркетах,
+            квартирі
+            або котеджі.</p>
    
-];
+</div>
+</div>
+</a>`,
+
+`<a href="blog.html#sick">
+<div class="carousel-item active">
+<img src="img/cold.png" class="d-block" alt="...">
+<div class="carousel-caption">
+
+											<h5>Поради, як не захворіти від кондиціонера</h5>
+											<p>Незважаючи на шалену популярність кондиціонерів, їх і досі
+												бояться постійно вмикати, щоб
+												не захворіти. Проте чи це дійсно можливо? І як вберегтися, якщо це
+												правда?</p>
+										
+									</div>
+                                </div>
+                                </a>`,
+                                
+                                ` <a href="blog.html#false">
+                                <div class="carousel-item active">
+                                <img src="img/myth.png" class="d-block" alt="...">
+                                <div class="carousel-caption">
+                                   
+                                        <h5>Міфи про кондиціонери</h5>
+                                        <p>Серед усієї побутової техніки кондиціонери чи не найбільше
+                                            обросли величезною кількістю
+                                            міфів.</p>
+                                  
+                                </div>
+                            </div>
+                            </a>`
+    
+]
 
 
+let currentIndex = 0; 
+const interval = setInterval(slide, 3000);
 
-let currentIdx = 0;
 function slide() {
-    currentIdx = ++currentIdx > images.length - 1 ? 0 : currentIdx;
-    showSlide(currentIdx);
+    currentIndex =  ++currentIndex > images.length - 1 ? 0 : currentIndex;
+    showSlide(currentIndex);
+    
 }
-setInterval(slide, 3000);
-function back() {
-    currentIdx = --currentIdx < 0 ? images.length - 1 : currentIdx;
-    showSlide(currentIdx);
-}
-function showSlide(idx) {
-    document.querySelector('.carousel').img = images[idx];
+
+
+function showSlide(currentIndex) {
+    document.querySelector('.carousel').innerHTML = images[currentIndex];
+    
 }
