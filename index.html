@@ -55,7 +55,7 @@
 					обладнання уже понад 5 років. Ми пропонуємо широкий асортимент товарів, займаємось послугами
 					монтажу,
 					обслуговування та ремонту обладнання.</p>
-				<form action=".contacts">
+				<form action="#our-products">
 					<button class="green-button" type="submit">Каталог</button>
 				</form>
 			</div>
@@ -149,7 +149,7 @@
 					<div class="products-card">
 						<img src="img/pro.jpg" class="card-img-top" alt="...">
 						<div class="card-body">
-							<h5 class="card-title">Gree Change Pro GWH24KG-K3DNA5G</h5>
+							<h5 class="card-title">Gree Change  <br>	Pro GWH24KG-K3DNA5G</h5>
 							<p class="card-price">$ 29 260,00 USD</p>
 							<button class="green-button">Купити</button>
 						</div>
@@ -204,7 +204,7 @@
 						</details>
 					</div>
 					<form action="#contacts">
-						<button class="green-button" type="submit">Зателефонуйте мені</button>
+						<button class="green-button" type="submit" data-toggle="modal" data-target="#products-modal">Зателефонуйте мені</button>
 					</form>
 				</div>
 			</section>
@@ -344,15 +344,13 @@
 					<div class="adress">
 						<h3>―CLIMATOP―</h3>
 						<h4>Контакти</h4>
-						<p>Адреса: вул Стрийська 29а</p>
-						<p>Години: Понеділок - Субота: 11: 00 - 21: 00</p>
-						<p>Контакти: +380 73 50 50 440 kreuzfeuer8768@gmail.com</p>
-
-						<iframe
-							src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2575.325686600283!2d24.01937341516322!3d49.798744441988994!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x473ae7c35b8cb91f%3A0x7e85f9363ea4bb3e!2z0YPQuy4g0KHQutC-0YDQuNC90YssIDI5LCDQm9GM0LLQvtCyLCDQm9GM0LLQvtCy0YHQutCw0Y8g0L7QsdC70LDRgdGC0YwsIDc5MDAw!5e0!3m2!1sru!2sua!4v1604591176946!5m2!1sru!2sua"
-							width="570" height="312" frameborder="0" style="border:0;" allowfullscreen=""
-							aria-hidden="false" tabindex="0"></iframe>
+						<p>Адреса: <span>вул Стрийська 29а</span></p>
+						<p>Години: <span>Понеділок - Субота: 11: 00 - 21: 00</span></p>
+						<p>Контакти: <span>+380 73 50 50 440 kreuzfeuer8768@gmail.com</span></p>
+						<img src="img/leaves.png" alt="leaves">
 					</div>
+					
+						
 					<div class="contact-form ">
 						<h4>Надсилай запитання</h4>
 						<p>Будь ласка, заповніть нижче подану форму і ми якнайшвидче дамо відповідь</p>
@@ -416,9 +414,9 @@
             <div class="menu-items">
 				<a href="#main">Головна</a>
                 <a href="#aboutus">Про нас</a>
-					<a href="#services">Послуги</a>
-					<a href="#products">Каталог</a>
-					<a href="#blog">Блог</a>
+					<a href="#our-services">Послуги</a>
+					<a href="#our-products">Каталог</a>
+					<a href="#our-blog">Блог</a>
 					<a href="#contacts" data-toggle="modal" data-target="#products-modal">Зателефонуйте мені</a>
             </div>
             <div class="social">
@@ -445,7 +443,7 @@
 		</div>
 		<div class="modal-body">
 			<div class="contact-form ">
-			<p>Будь ласка, заповніть нижче подану форму і ми якнайшвидче зателефонуємо </p>
+			<p>Будь ласка, заповніть нижче подану форму і ми якнайшвидше зателефонуємо </p>
 			<form action="YOUR-ADDRESS-HERE" method="POST">
 				<label>
 		<input type="text" placeholder="Ім`я" required name="user-name">

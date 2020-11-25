@@ -445,8 +445,8 @@ margin: 20px 0 20px 180px;
 
     .contacts {
         display: flex;
-        background-color: whitesmoke;
-        padding: 65px 50px 15px 0;
+        background-color:#f8f8f6;;
+        padding: 65px 50px 0 0;
     }
 
     .contacts .adress{
@@ -455,15 +455,20 @@ margin: 20px 0 20px 180px;
     }
 
     .contacts .adress > p {
-        margin-top: 30px;
+        margin-top: 70px;
+        font-size: 32px;
+        color: var(--titles-color);
+    }
+
+    .contacts .adress span {
+        color: var(--paragraph-color);
         font-size: 26px;
     }
 
-    .contacts iframe {
-        margin-top: 20px;
-        width: 450px;
-        height: 270px;
-    }
+   .adress img {
+       display: flex;
+       
+   }
 
     .contacts .contact-form {
         border-top: 4px solid var(--titles-color);
@@ -472,6 +477,7 @@ margin: 20px 0 20px 180px;
         text-align: center;
         background-color: white;
         height: 585px;
+        margin-top: 80px;
        
     }
 
@@ -505,7 +511,7 @@ margin: 20px 0 20px 180px;
         padding:120px 0 90px 0;
         position:relative;
         font-family:'Cormorant Infant', serif;
-        background-color: whitesmoke;
+        background-color: #f8f8f6;
         z-index: -2;
     }
 
@@ -516,20 +522,20 @@ margin: 20px 0 20px 180px;
 
     .promotion .bgc_y {
         position:absolute;
-        width:100%;
-        height: 700px;
+        
+        height: 800px;
         background: url(img/flowers.png) center no-repeat;
+        width:100%;
         z-index:-1;
-        top:-50px;
+        top:-75px;
         left:0
     }
         .promotion__text {
             align-items: center;
             text-align: center;
-            padding-top: 100px;
+            padding-top: 130px;
             font-size: 24px;
             color: var(--accent-color);
-            
             padding-left: 5px;
         }
         
