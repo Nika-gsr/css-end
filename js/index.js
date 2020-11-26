@@ -52,3 +52,44 @@ function setClock(selector, endtime) {
 }
 
 setClock('.timer', deadline);
+
+
+
+// $(document).ready(function(){
+//     $('.multi-split').slick({
+//         slidesToShow: 4,
+//         slidesToScroll: 1,
+//       arrows: true,
+      
+      
+//       nextArrow: '<i class="fa fa-angle-right" aria-hidden="true"></i>',
+//       prevArrow: '<i class="fa fa-angle-left" aria-hidden="true"></i>',
+      
+//       responsive: [
+//   {
+//     breakpoint: 1024,
+//     settings: {
+//       slidesToShow: 4,
+//       slidesToScroll: 1,    
+
+//     }
+//   },
+//   {
+//     breakpoint: 600,
+//     settings: {
+//       slidesToShow: 1,
+//       slidesToScroll: 1
+//     }
+//   },
+//   {
+//     breakpoint: 480,
+//     settings: {
+//       slidesToShow: 1,
+//       slidesToScroll: 1
+
+//     }
+//   }
+
+// ]
+//     });
+//   });

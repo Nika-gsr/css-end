@@ -1,7 +1,7 @@
 const images = [
 `<a href="blog.html#defect">
 <div class="carousel-item active">
-<img src="img/health.png" class="d-block" alt="health">
+<img src="img/blog-wind.png" class="d-block" alt="health">
 <div class="carousel-caption">
     
         <h5>Чи шкідливий кондиціонер для здоров’я?</h5>
@@ -16,14 +16,13 @@ const images = [
 
 `<a href="blog.html#sick">
 <div class="carousel-item active">
-<img src="img/cold.png" class="d-block" alt="...">
+<img src="img/blog-grey.png" class="d-block" alt="...">
 <div class="carousel-caption">
 
 											<h5>Поради, як не захворіти від кондиціонера</h5>
 											<p>Незважаючи на шалену популярність кондиціонерів, їх і досі
 												бояться постійно вмикати, щоб
-												не захворіти. Проте чи це дійсно можливо? І як вберегтися, якщо це
-												правда?</p>
+												не захворіти. </p>
 										
 									</div>
                                 </div>
@@ -31,7 +30,7 @@ const images = [
                                 
                                 ` <a href="blog.html#false">
                                 <div class="carousel-item active">
-                                <img src="img/myth.png" class="d-block" alt="...">
+                                <img src="img/blog-sofa.png" class="d-block" alt="...">
                                 <div class="carousel-caption">
                                    
                                         <h5>Міфи про кондиціонери</h5>

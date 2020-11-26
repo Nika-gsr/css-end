@@ -418,16 +418,22 @@
         flex-direction: column;
         text-align: center;
     }
-
-   .blog .carousel {
-display: flex;
-margin: 20px 0 20px 180px;      
- text-align: center;     
-    }
+    
+    
+    .blog .carousel {
+        display: flex;
+        margin: 20px 0 20px 145px;      
+         text-align: center;     
+            }
  
 
     .blog .carousel p {
+        color: black;
+    }
+    .blog .carousel h5 {
         color: var(--accent-color);
+        font-weight: 500px;
+        font-size: 40px;
     }
 
     .carousel-caption {
