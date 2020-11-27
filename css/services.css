@@ -1,0 +1,61 @@
+
+header {
+    padding-top: 25px;
+    padding-bottom: 85px;
+}
+.services-page {
+    display: flex;
+    flex-direction: column;
+    background-color: whitesmoke;
+}
+
+.services-page .installation, .consultation, .guarantee {
+    display: flex;
+    padding-top: 65px;
+    padding-bottom: 65px;
+}
+
+
+.services-page .guarantee {
+    background-color: white; 
+}
+
+.services-page img {
+    max-width: 512px;
+    max-height: 341px;
+    margin-top: 75px; 
+    padding-right: 20px;
+    
+}
+
+.services-page-content {
+    width: 50%;
+    flex-direction: column;
+    text-align: center;
+    padding-right: 20px;
+}
+
+.services-page-content p {
+    color: var(--paragraph-color);
+    margin-top: 30px;
+}
+
+.services-page-content  strong {
+    color: var(--titles-color);
+    font-size: 26px;
+}
+
+.services-page-questions summary {
+    font-weight: bold;
+    margin-top: 25px;
+    font-size: 20px;
+    color: var(--accent-color);
+}
+
+.services-page-questions p {
+    color: black;
+}
+
+.services-page .green-button {
+    margin-top: 30px;
+}
