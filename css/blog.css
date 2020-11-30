@@ -2,4 +2,20 @@ header {
   margin-bottom: 90px;
 }
 
+.blog, .blog-articles {
+  background-color: var(--bg-color);
+}
 
+ summary {
+  font-size: 20px;
+  margin-top: 30px;
+  font-family:'Cormorant Infant', serif;
+}
+
+details p {
+  text-align: center;
+}
+
+.blog {
+  padding: 40px 0 40px 0;
+}
