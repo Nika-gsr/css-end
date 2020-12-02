@@ -1,3 +1,5 @@
+new ProductList(new Cart());
+
 const deadline = "2020-12-31";
 
 function getTimeRemaining(endtime) {
@@ -50,40 +52,9 @@ function setClock(selector, endtime) {
 
 setClock(".timer", deadline);
 
-$(document).ready(function () {
-  $(".products-cards").slick({
-    slidesToShow: 3,
-    slidesToScroll: 1,
-    arrows: true,
 
-    nextArrow: '<i class="fa fa-angle-right" aria-hidden="true"></i>',
-    prevArrow: '<i class="fa fa-angle-left" aria-hidden="true"></i>',
 
-    responsive: [
-      {
-        breakpoint: 1026,
-        settings: {
-          slidesToShow: 2,
-          slidesToScroll: 1,
-        },
-      },
-      {
-        breakpoint: 600,
-        settings: {
-          slidesToShow: 1,
-          slidesToScroll: 1,
-        },
-      },
-      {
-        breakpoint: 480,
-        settings: {
-          slidesToShow: 1,
-          slidesToScroll: 1,
-        },
-      },
-    ],
-  });
-});
+
 
 (function() {
   'use strict';

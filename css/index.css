@@ -1,3 +1,5 @@
+
+
 @import url('https://fonts.googleapis.com/css2?family=Cormorant+Infant:wght@700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Cormorant+Infant:wght@700&family=Playfair+Display+SC:wght@700&display=swap');
 
@@ -11,11 +13,21 @@
         --second-bg-color: white;
     }
 
-    h1, h2, h3, h4, h5, p, nav {
+    h1, h2, h3, h4, h5, p, nav, details {
         font-family:'Cormorant Infant', serif;
         margin: 0;
         padding: 0;
     }
+
+
+    .alert {
+        position: fixed;
+        top: 50px; 
+        width: 50%;
+        left: 25%;
+        z-index: 1051;
+    }
+    
 
     h1 {
         margin-top: 20px;
@@ -52,7 +64,7 @@
         margin-top: 30px;
     }
 
-    .green-button {
+    .green-button, .sort-asc, .btn-info  {
         background-color: var(--titles-color);
         color: white;
         margin: 0 15px 0 0;
@@ -69,6 +81,7 @@
         width: 183.062px;
         animation: pulse; 
         animation-duration: 2s;
+        font-family:'Cormorant Infant', serif;
     }
     .green-button:hover { 
         border: 3px solid var(--accent-color);
@@ -76,9 +89,9 @@
 
     .green-button:focus {
         outline: none;
-}
+    }
 
-    .transparent-button {
+    .transparent-button, .sort-desc, .buy  {
         background-color: transparent;
         border: 1px solid black;
         padding: 0.35em 1.2em;
@@ -95,8 +108,8 @@
         width: 183.062px;
         animation: pulse; 
         animation-duration: 2s;
+        font-family:'Cormorant Infant', serif;
     }
-
     .transparent-button:hover { 
         border: 3px solid var(--accent-color);
     }
@@ -104,6 +117,35 @@
     .transparent-button:focus {
         outline: none;
     }
+
+    .btn-info {
+        margin-top: 20px;
+    }
+
+    .btn-info:hover { 
+        border: 3px solid var(--accent-color);
+        color: white;
+        background-color: var(--accent-color);
+        }
+
+   .buy{
+       color:black;
+        background-color: transparent;
+        margin-top: 20px;
+   }
+
+   .buy:hover { 
+    border: 3px solid var(--accent-color);
+    color: white;
+    background-color: var(--accent-color);
+    }
+
+    .buy span {
+    font-size: 18px;
+    }
+
+    
+
   
     body {
         max-width: 1100px;
@@ -140,29 +182,20 @@
         border-color: var(--accent-color);
     }
 
-    /* @media (max-width: 769px) {
+    .openCartLink {
+        color: black;
+    }
 
-        .burger-icon {
-            display: none;
-        }
-
-        header nav {
-            display: flex;
-        }
-
-        header nav .menu-items { 
-            display: flex;
-            align-items: center;
-            justify-content: space-around;
-            flex: 1;
-        }
-    } */
+    .openCartLink:hover {
+       color:var(--accent-color);
+    }
 
     .main-page {
         background:  url(../img/bg/main-bg.png) center no-repeat;
         padding: 110px 0 200px 0;
         background-color: var(--second-bg-color);
     }
+
     .main-text {
         text-align: center;
         text-transform: uppercase;
@@ -171,6 +204,14 @@
     }
 
     @media (max-width: 521px) {
+        .main-page {
+            background:  url(../img/bg/LG.png) center no-repeat;
+            padding: 0 0 200px 0;
+        }
+        h3 {
+            justify-self: center;
+            align-items:center;
+        }
         h1 {
             font-size: 55px;
         }
@@ -305,32 +346,44 @@
         padding-top: 65px;
         padding-bottom: 65px;
     }
-    
-    .products-cards{
-        display: flex!important;
+
+
+    .products-container{
         margin-top: 20px;
-        
     }
-    
-    .product{
-        width: 300px;
-        height: 450px;
-        margin: 10px;
+
+    .products-container .card-title {
+        font-size: 30px;
     }
-    
-    .products-cards i {
+   
+    .products-container i {
         font-size: 40px;
         margin-top: 15%;
     } 
     
-    .product-description{
-        margin: 5px;
-    }
     
     .product img {
         width: 100%;
         box-shadow: 0 0 10px rgba(0,0,0,0.5);
     }
+
+    .products-btns {
+        margin-top: 20px;
+        margin-bottom: 20px;
+        display: flex;
+        justify-content: center;
+    }
+
+    @media (max-width: 630px){
+        .product-description p, h5{
+            font-size: 18px;
+        }
+        .product .green-button {
+            height: 35px;
+        letter-spacing: .01em;
+        width: 130.062px;
+        }
+     }
     
     .gree {
         display: flex;
@@ -357,9 +410,8 @@
     }
 
     .gree-reasons summary {
-        font-weight: bold;
-        margin-top: 25px;
-        font-size: 20px;
+        margin-top: 20px;
+        font-size: 25px;
         color: var(--accent-color);
     }
 
@@ -375,11 +427,6 @@
         background-color: whitesmoke;
     }
 
-    @media (max-width: 1000px) {
-        .gree-content p {
-           display:none;
-        }
-    } 
 
     @media (max-width: 821px) {
         .gree img {
@@ -435,11 +482,7 @@
     .our-company {
         display: flex;
         background-color: whitesmoke;
-        padding-top: 75px;    
-    }
-
-    .our-company h3 {
-        margin-top: 60px;
+        padding-top: 70px;    
     }
 
     .our-company h5 {
@@ -450,14 +493,19 @@
         padding-left: 20px;
         padding-right: 20px;
         text-align: center;
-        flex-direction: column;
         width: 50%;
     }
+    
+.our-company .reason {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 25px;
+}
     .our-company .service-round {
-        margin-top: 60px;
-        justify-content: center;
-        margin-left: 150px;
-         width: 80px;
+        margin-top: 30px;
+        width: 80px;
         height: 80px;
     }
 
@@ -468,6 +516,7 @@
 
     .our-company .bg-img img {
         width: 100%;
+        max-height: 650px;
     }
 
     @media (max-width: 1100px) {
@@ -479,20 +528,19 @@
     .blog{
         display: flex;
         background-color: white;
-        padding-bottom: 65px;
+        padding-bottom: 45px;
          padding-top: 65px;
          flex-direction: column;
         text-align: center; 
     }
     
-    .blog .carousel {
-       display: flex;
-       flex-direction: column;
-    }
-
-    .blog .card-group {
-        display: flex; 
+    .blog-carousel{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
         justify-content: center;
+        align-items: center;
+        margin-top: 20px;
     }
 
     .blog .carousel p {
@@ -506,51 +554,17 @@
     .blog .carousel h5 {
         color: var(--accent-color);
         font-weight: 500px;
-        font-size: 40px;
-    }
-
-    .blog .carousel img {
-        width: 100%;
+        font-size: 35px;
     }
 
     .blog .transparent-button {
         margin-top: 20px;
     }
 
-    @media (max-width: 1015px) {
-        .blog .carousel h5 {
-            background-color: whitesmoke;
-            font-size: 30px;
-        }
-        .blog .carousel p {
-            font-size: 30px;
-        }
-    }
-
-    @media (max-width: 749px) {
-        .blog .carousel h5 {
-            background-color: whitesmoke;
-            font-size: 30px;
-        }
-        .blog .carousel p {
-            font-size: 20px;
-        }
-    }
-
-    @media (max-width: 484px) {
-        .blog .carousel h5 {
-            background-color: whitesmoke;
-            font-size: 20px;
-        }
-        .blog .carousel p {
-            display: none;
-        }
-    }
-    
     .contacts {
         display: flex;
         background-color:#f8f8f6;;
-        padding: 45px 50px 0 0;
+        padding: 45px 35px 0 0;
     }
 
     .contacts .adress{
@@ -580,7 +594,7 @@
         border-radius: 5px 5px 5px 5px;
         text-align: center;
         background-color: white;
-        height: 585px;
+        max-height: 585px;
         margin-top: 80px;
        
     }
@@ -749,7 +763,7 @@
     }
 
     footer .social {
-        padding-top: 5px;
+        padding-top: 10px;
     }
 
     .social img{
@@ -759,6 +773,8 @@
 
     footer nav .coppy_right p {
         color: whitesmoke;
+        margin-top: 10px;
+        font-size: 15px;
     }
 
     @media (max-width: 640px){
@@ -802,9 +818,7 @@
   .back_to_top-show {
     display: block;
   }
-  
 
-    
-                
-                
-
+  .card {
+    height: 100%;
+}

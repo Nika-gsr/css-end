@@ -1,0 +1,30 @@
+[
+    {
+        "id": "1",
+        "title": "Gree Bora GWH12AAB-K3NNA2A",
+        "image": "bora1.jpg",
+        "description": "Baby Yoda sticker",
+        "price": 49.99
+    },
+    {
+        "id": "2",
+        "title": "Gree Bora GWH12AAB-K3NNA2A",
+        "image": "fairy.jpg",
+        "description": "Banana sticker",
+        "price": 19.99
+    },
+    {
+        "id": "3",
+        "title": "Gree Bora GWH12AAB-K3NNA2A",
+        "image": "pro.jpg",
+        "description": "Girl sticker",
+        "price": 24.99
+    },
+    {
+        "id": "4",
+        "title": "Gree Bora GWH12AAB-K3NNA2A",
+        "image": "bora1.jpg",
+        "description": "Viking sticker",
+        "price": 34.99
+    }
+]

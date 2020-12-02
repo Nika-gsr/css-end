@@ -1,8 +1,9 @@
 
 header {
-    padding-top: 25px;
-    padding-bottom: 85px;
+    padding-top: 15px;
+    padding-bottom: 15px;
 }
+
 .services-page {
     display: flex;
     flex-direction: column;

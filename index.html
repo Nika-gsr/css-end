@@ -1,400 +1,313 @@
 <!DOCTYPE html>
-<html lang="uk">
+<html lang="en">
 
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>ClimaTop</title>
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>ClimaTop</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
-  <link rel="stylesheet" href="css/index.css">
-  <link rel="stylesheet" type="text/css" href="slick/slick-theme.css" />
-  <link rel="stylesheet" type="text/css" href="slick/slick.css" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="icon" href="img/products/baby-yoda.svg">
 </head>
 
 <body>
+    <header>
+      <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="#">ClimaTop</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav">
+            <li class="nav-item active">
+              <a class="nav-link" href="#main">Головна <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#aboutus">Про нас</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#our-services">Послуги</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#our-products">Каталог</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#our-blog">Блог</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#" data-toggle="modal" data-target="#products-modal">Зателефонуйте мені</a>
+            </li>
+          </ul>
+          <div>
+            <a class="nav-link openCartLink" href="#modal-cart" data-toggle="modal">
+              <i class="fas fa-shopping-cart"></i>
+                Cart<span id="cart-badge" class="badge badge-light"></span>
+            </a>
+        </div>
+        </div>
+      </nav>
+    </header>
+ 
+    <main>
+      <section id="main" class="main-page">
+        <div class="main-bg"> </div>
+        <div class="main-text">
+          <h3>―ClimaTOP―</h3>
+          <h1>КОНДИЦІОНЕРИ</h1>
+          <p>ПРОДАЖ ОБСЛУГОВУВАННЯ МОНТАЖ
+            <p>
+              <div class="main-buttons">
+                <button class="green-button" type="submit" data-toggle="modal" data-target="#products-modal">Зателефонуйте мені</button>
+                <button class="transparent-button" type="submit" data-toggle="modal" data-target="#calc-modal">Прорахувати вартість</button>
+              </div>
+        </div>
+      </section>
+  
+      <section id="aboutus" class="about-us">
+        <div class="about-us-text">
+          <h3>―ПРО НАС―</h3>
+          <h4>Створи затишок у своїй оселі!</h4>
+          <p>Важко уявити модернові будівлі без передового кліматичного обладнання. Створити оптимальні умови для життя чи праці допоможе правильно обраний кондиціонер. Наша фірма працює на ринку кліматичного обладнання уже понад 5 років. Ми пропонуємо широкий асортимент товарів, займаємось послугами монтажу, обслуговування та ремонту обладнання.</p>
+          <form action="#our-products">
+            <button class="green-button" type="submit">Каталог</button>
+          </form>
+        </div>
+        <img src="img/grey.jpg" alt="grey-gree">
+      </section>
+  
+      <section id="our-services" class="services">
+        <div class="card-deck">
+          <div class="card">
+            <div class="service-round">
+              <img src="img/icons/service/sell.svg" class="card-img-top" alt="sell">
+            </div>
+            <div class="card-body">
+              <h5 class="card-title">Продаж</h5>
+              <p class="card-text">У нас Ви можете придбати повністю укомплектовані спліт-системи. Широкий асортимент дозволяє підібрати потрібний варіант під будь-які запити покупців.</p>
+              <form action="#our-products">
+                <button class="transparent-button">Детальніше</button>
+              </form>
+            </div>
+          </div>
+          <div class="card">
+            <div class="service-round">
+              <img src="img/icons/service/settings.svg" class="card-img-top" alt="settings">
+            </div>
+            <div class="card-body">
+              <h5 class="card-title">Монтаж</h5>
+              <p class="card-text">Без досвіду правильно встановити кліматичне обладнання неможливо.
+                <br> Є безліч нюансів щодо вибору місця. Все це професійно зробить наша команда.</p>
+              <form action="services.html#installation-title">
+                <button class="transparent-button">Детальніше</button>
+              </form>
+            </div>
+          </div>
+          <div class="card">
+            <div class="service-round">
+              <img src="img/icons/service/services-guarantee.svg" class="card-img-top" alt="guarantee">
+            </div>
+            <div class="card-body">
+              <h5 class="card-title">Гарантія</h5>
+              <p class="card-text"> Ми розділяємо відповідальність перед замовниками за реалізовану продукцію і надані послуги, і в разі виявлення дефектів ми беззастережно їх усунемо.</p>
+              <form action="services.html#guarantee-title">
+                <button class="transparent-button">Детальніше</button>
+              </form>
+            </div>
+          </div>
+          <div class="card">
+            <div class="service-round">
+              <img src="img/icons/service/services-support.svg" class="card-img-top" alt="support">
+            </div>
+            <div class="card-body">
+              <h5 class="card-title">Консультація</h5>
+              <p class="card-text">Без досвіду правильно встановити кліматичне обладнання неможливо.
+                <br> Є безліч нюансів щодо вибору місця. Все це професійно зробить наша команда.</p>
+              <form action="services.html#consult-title">
+                <button class="transparent-button">Детальніше</button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </section>
+  
+      <section class="phone-number">
+        <h2 class="want-to-know">Хочеш дізнатись більше?</h2>
+        <p class="phone">Телефонуй +380 50 50 440</p>
+      </section>
+  
+       
+        <section class="products">
+            <h3>Товари</h3>
+            <h4 id="our-products">Каталог</h4>
+            <p>До Вашої уваги лідери ринку кліматичного обладнання - кондиціонери GREE</p>
+            <div class="products-btns">
+            <button class="sort-asc">від найдешевшого</button>
+            <button class="sort-desc">до найдорожчого</button>
+          </div>
+            <div class="row products-container">
+               <!--Products are dynamically generated here-->
+            </div>
+        </section>
 
-	<header>
-	<nav class="navbar navbar-expand-lg navbar-light bg-light">
-		<a class="navbar-brand" href="#">ClimaTop</a>
-		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-			<span class="navbar-toggler-icon"></span>
-		</button>
-		<div class="collapse navbar-collapse" id="navbarNav">
-			<ul class="navbar-nav">
-				<li class="nav-item active">
-					<a class="nav-link" href="#main">Головна <span class="sr-only">(current)</span></a>
-				</li>
-				<li class="nav-item">
-					<a class="nav-link" href="#aboutus">Про нас</a>
-				</li>
-				<li class="nav-item">
-					<a class="nav-link" href="#our-services">Послуги</a>
-				</li>
-				<li class="nav-item">
-					<a class="nav-link" href="#our-products">Каталог</a>
-				</li>
-				<li class="nav-item">
-					<a class="nav-link" href="#our-blog">Блог</a>
-				</li>
-				<li class="nav-item">
-					<a class="nav-link" href="#" data-toggle="modal" data-target="#products-modal">Зателефонуйте мені</a>
-				</li>
-			</ul>
-		</div>
-	</nav>
-</header>
-
-  <main>
-    <section id="main" class="main-page">
-      <div class="main-text">
-        <h3>―ClimaTOP―</h3>
-        <h1>КОНДИЦІОНЕРИ</h1>
-        <p>ПРОДАЖ ОБСЛУГОВУВАННЯ МОНТАЖ
-          <p>
-            <div class="main-buttons">
+        <section class="gree">
+          <img src="img/whygree.png" alt="gree">
+          <div class="gree-content">
+            <h3>―GREE―</h3>
+            <h4>Чому ми обираємо GREE?</h4>
+            <p>Gree - один зі світових лідерів на ринку кліматичної техніки. Випускає продукцію, яка відрізняється оптимальним співвідношенням за якістю і вартістю. Його моделі користуються величезною популярністю серед українських користувачів, для яких питання ціни є найактуальнішим.</p>
+            <div class="gree-reasons">
+              <details>
+                <summary>Широкий асортимент</summary>
+                <p>Компанія Gree виробляє всі види кліматичної техніки. В її асортименті завжди знайдеться підходяще рішення для кондиціонування, опалення, очищення та осушення повітря, а також для створення надійної системи вентиляції.</p>
+              </details>
+              <details>
+                <summary>Вартість та якість</summary>
+                <p>Компанія Gree виробляє всі види кліматичної техніки. В її асортименті завжди знайдеться підходяще рішення для кондиціонування, опалення, очищення та осушення повітря, а також для створення надійної системи вентиляції.</p>
+              </details>
+              <details>
+                <summary>Інноваційні рішення</summary>
+                <p>Компанія Gree виробляє всі види кліматичної техніки. В її асортименті завжди знайдеться підходяще рішення для кондиціонування, опалення, очищення та осушення повітря, а також для створення надійної системи вентиляції.</p>
+              </details>
+            </div>
+            <form action="#contacts">
               <button class="green-button" type="submit" data-toggle="modal" data-target="#products-modal">Зателефонуйте мені</button>
-              <button class="transparent-button" type="submit" data-toggle="modal" data-target="#calc-modal">Прорахувати вартість</button>
-            </div>
-      </div>
-    </section>
-
-    <section id="aboutus" class="about-us">
-      <div class="about-us-text">
-        <h3>―ПРО НАС―</h3>
-        <h4>Створи затишок у своїй оселі!</h4>
-        <p>Важко уявити модернові будівлі без передового кліматичного обладнання. Створити оптимальні умови для життя чи праці допоможе правильно обраний кондиціонер. Наша фірма працює на ринку кліматичного обладнання уже понад 5 років. Ми пропонуємо широкий асортимент товарів, займаємось послугами монтажу, обслуговування та ремонту обладнання.</p>
-        <form action="#our-products">
-          <button class="green-button" type="submit">Каталог</button>
-        </form>
-      </div>
-      <img src="img/grey.jpg" alt="grey-gree">
-    </section>
-
-    <section id="our-services" class="services">
-      <div class="card-deck">
-        <div class="card">
-          <div class="service-round">
-            <img src="img/icons/service/sell.svg" class="card-img-top" alt="sell">
-          </div>
-          <div class="card-body">
-            <h5 class="card-title">Продаж</h5>
-            <p class="card-text">У нас Ви можете придбати повністю укомплектовані спліт-системи. Широкий асортимент дозволяє підібрати потрібний варіант під будь-які запити покупців.</p>
-            <form action="#our-products">
-              <button class="transparent-button">Детальніше</button>
             </form>
           </div>
+        </section>
+        <div class="gree-video">
+          <iframe src="https://www.facebook.com/plugins/video.php?href=https%3A%2F%2Fwww.facebook.com%2Fgree.com.ua%2Fvideos%2F685561709030323%2F&show_text=0&width=560" width="560" height="315" style="border:none;overflow:hidden" allowfullscreen allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"></iframe>
         </div>
-        <div class="card">
-          <div class="service-round">
-            <img src="img/icons/service/settings.svg" class="card-img-top" alt="settings">
-          </div>
-          <div class="card-body">
-            <h5 class="card-title">Монтаж</h5>
-            <p class="card-text">Без досвіду правильно встановити кліматичне обладнання неможливо.
-              <br> Є безліч нюансів щодо вибору місця. Все це професійно зробить наша команда.</p>
-            <form action="services.html#installation-title">
-              <button class="transparent-button">Детальніше</button>
-            </form>
-          </div>
-        </div>
-        <div class="card">
-          <div class="service-round">
-            <img src="img/icons/service/services-guarantee.svg" class="card-img-top" alt="guarantee">
-          </div>
-          <div class="card-body">
-            <h5 class="card-title">Гарантія</h5>
-            <p class="card-text"> Ми розділяємо відповідальність перед замовниками за реалізовану продукцію і надані послуги, і в разі виявлення дефектів ми беззастережно їх усунемо.</p>
-            <form action="services.html#guarantee-title">
-              <button class="transparent-button">Детальніше</button>
-            </form>
-          </div>
-        </div>
-        <div class="card">
-          <div class="service-round">
-            <img src="img/icons/service/services-support.svg" class="card-img-top" alt="support">
-          </div>
-          <div class="card-body">
-            <h5 class="card-title">Консультація</h5>
-            <p class="card-text">Без досвіду правильно встановити кліматичне обладнання неможливо.
-              <br> Є безліч нюансів щодо вибору місця. Все це професійно зробить наша команда.</p>
-            <form action="services.html#consult-title">
-              <button class="transparent-button">Детальніше</button>
-            </form>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section class="phone-number">
-      <h2 class="want-to-know">Хочеш дізнатись більше?</h2>
-      <p class="phone">Телефонуй +380 50 50 440</p>
-    </section>
-
-    <section class="products">
-      <h3>―ТОВАРИ―</h3>
-      <h4 id="our-products">Каталог</h4>
-      <p>До Вашої уваги лідери ринку кліматичного обладнання - кондиціонери GREE</p>
-      <div class="products-cards">
-        <div class="product">
-          <img src="img/products/bora1.jpg" alt="Gree Bora GWH12AAB-K3NNA2A">
-          <div class="product-description ">
-            <h5 class="card-title">Gree Bora GWH12AAB-K3NNA2A</h5>
-            <p class="card-price">$ 11 200,00 USD</p>
-            <button class="green-button">Купити</button>
-          </div>
-        </div>
-        <div class="product">
-          <img src="img/products/fairy.jpg" alt="Gree Bora GWH12AAB-K3NNA2A">
-          <div class="product-description">
-            <h5 class="card-title">Gree Fairy GWH24ACD-K3NNA1A</h5>
-            <p class="card-price">$ 25 088,00 USD</p>
-            <button class="green-button">Купити</button>
-          </div>
-        </div>
-        <div class="product">
-          <img src="img/products/pro.jpg" alt="Gree Bora GWH12AAB-K3NNA2A">
-          <div class="product-description">
-            <h5 class="card-title">Gree Change <br> Pro GWH24KG-K3DNA5G</h5>
-            <p class="card-price">$ 29 260,00 USD</p>
-            <button class="green-button">Купити</button>
-          </div>
-        </div>
-        <div class="product">
-          <img src="img/products/bora1.jpg" alt="Gree Bora GWH12AAB-K3NNA2A">
-          <div class="product-description">
-            <h5 class="card-title">Gree Bora GWH12AAB-K3NNA2A</h5>
-            <p class="card-price">$ 11 200,00 USD</p>
-            <button class="green-button">Купити</button>
-          </div>
-        </div>
-        <div class="product">
-          <img src="img/products/fairy.jpg" alt="Gree Bora GWH12AAB-K3NNA2A">
-          <div class="product-description">
-            <h5 class="card-title">Gree Fairy GWH24ACD-K3NNA1A</h5>
-            <p class="card-price">$ 25 088,00 USD</p>
-            <button class="green-button">Купити</button>
-          </div>
-        </div>
-        <div class="product">
-          <img class="shoes-image" src="img/products/pro.jpg" alt="Gree Bora GWH12AAB-K3NNA2A">
-          <div class="product-description">
-            <h5 class="card-title">Gree Change <br> Pro GWH24KG-K3DNA5G</h5>
-            <p class="card-price">$ 29 260,00 USD</p>
-            <button class="green-button">Купити</button>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section class="gree">
-      <img src="img/whygree.png" alt="gree">
-      <div class="gree-content">
-        <h3>―GREE―</h3>
-        <h4>Чому ми обираємо GREE?</h4>
-        <p>Gree - один зі світових лідерів на ринку кліматичної техніки. Випускає продукцію, яка відрізняється оптимальним співвідношенням за якістю і вартістю. Його моделі користуються величезною популярністю серед українських користувачів, для яких питання ціни є найактуальнішим.</p>
-        <div class="gree-reasons">
-          <details>
-            <summary>Широкий асортимент</summary>
-            <p>Компанія Gree виробляє всі види кліматичної техніки. В її асортименті завжди знайдеться підходяще рішення для кондиціонування, опалення, очищення та осушення повітря, а також для створення надійної системи вентиляції.</p>
-          </details>
-          <details>
-            <summary>Вартість та якість</summary>
-            <p>Компанія Gree виробляє всі види кліматичної техніки. В її асортименті завжди знайдеться підходяще рішення для кондиціонування, опалення, очищення та осушення повітря, а також для створення надійної системи вентиляції.</p>
-          </details>
-          <details>
-            <summary>Інноваційні рішення</summary>
-            <p>Компанія Gree виробляє всі види кліматичної техніки. В її асортименті завжди знайдеться підходяще рішення для кондиціонування, опалення, очищення та осушення повітря, а також для створення надійної системи вентиляції.</p>
-          </details>
-        </div>
-        <form action="#contacts">
-          <button class="green-button" type="submit" data-toggle="modal" data-target="#products-modal">Зателефонуйте мені</button>
-        </form>
-      </div>
-    </section>
-    <div class="gree-video">
-      <iframe src="https://www.facebook.com/plugins/video.php?href=https%3A%2F%2Fwww.facebook.com%2Fgree.com.ua%2Fvideos%2F685561709030323%2F&show_text=0&width=560" width="560" height="315" style="border:none;overflow:hidden" allowfullscreen allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"></iframe>
-    </div>
-
-    <section class="numbers">
-      <div class="numbers-container">
-        <div class="box">
-		  <h3>15</h3>
-		  <div class="box-decoration"></div>
-          <p>ЗАВОДІВ ПО СВІТУ</p>
-        </div>
-        <div class="box">
-		  <h3>96</h3>
-		  <div class="box-decoration"></div>
-          <p>ДОСЛІДНИХ УСТАНОВ</p>
-        </div>
-        <div class="box">
-		  <h3>926</h3>
-		  <div class="box-decoration"></div>
-          <p>НАУКОВИХ ЛАБОРАТОРІЙ</p>
-        </div>
-        <div class="box">
-		  <h3>61052+</h3>
-		  <div class="box-decoration"></div>
-          <p>ПАТЕНТИ</p>
-		</div>
-	</div>
-    </section>
-
-    <section class="our-company">
-      <div class="our-company-content">
-        <h3>―CLIMATOP―</h3>
-        <h4>Чому обирають нас?</h4>
-        <div class="reasons-list">
-          <article class="reason">
-            <div class="service-round">
-              <img src="img/icons/about-us/about-us-price.svg" alt="hand-logo">
+    
+        <section class="numbers">
+          <div class="numbers-container">
+            <div class="box">
+          <h3>15</h3>
+          <div class="box-decoration"></div>
+              <p>ЗАВОДІВ ПО СВІТУ</p>
             </div>
-            <h5>Якість та ціна</h5>
-          </article>
-          <article class="reason">
-            <div class="service-round">
-              <img src="img/icons/about-us/consultation-our-company.svg" alt="consultation-logo">
+            <div class="box">
+          <h3>96</h3>
+          <div class="box-decoration"></div>
+              <p>ДОСЛІДНИХ УСТАНОВ</p>
             </div>
-            <h5>Консультація та підбір</h5>
-          </article>
-          <article class="reason">
-            <div class="service-round">
-              <img src="img/icons/about-us/about-us-guarantee.svg" alt="guarantee-logo">
+            <div class="box">
+          <h3>926</h3>
+          <div class="box-decoration"></div>
+              <p>НАУКОВИХ ЛАБОРАТОРІЙ</p>
             </div>
-            <h5>Гарантія</h5>
-
-          </article>
+            <div class="box">
+          <h3>61052+</h3>
+          <div class="box-decoration"></div>
+              <p>ПАТЕНТИ</p>
         </div>
       </div>
-      <div class="bg-img">
-        <img src="img/shine.jpg" alt="shine-bg">
-      </div>
-    </section>
-
-    <section class="blog">
-      <div class="blog-text">
-        <h3>―СТАТТІ―</h3>
-        <h4 id="our-blog">Blog</h4>
-        <p>Тут ми ділимось корисними та цікавими статтями для вас</p>
-      </div>
-      <div class="card-group">
-        <div class="carousel">
-          <div class="carousel-item active">
-            <img src="img/blog/blog-wind.png" class="d-block" alt="health">
-            <div class="carousel-caption">
-              <a href="blog.html#health-article">
+        </section>
+    
+        <section class="our-company">
+          <div class="our-company-content">
+            <h3>―CLIMATOP―</h3>
+            <h4>Чому обирають нас?</h4>
+            <div class="reasons-list">
+              <article class="reason">
+                <div class="service-round">
+                  <img src="img/icons/about-us/about-us-price.svg" alt="hand-logo">
+                </div>
+                <h5>Якість та ціна</h5>
+              </article>
+              <article class="reason">
+                <div class="service-round">
+                  <img src="img/icons/about-us/consultation-our-company.svg" alt="consultation-logo">
+                </div>
+                <h5>Консультація та підбір</h5>
+              </article>
+              <article class="reason">
+                <div class="service-round">
+                  <img src="img/icons/about-us/about-us-guarantee.svg" alt="guarantee-logo">
+                </div>
+                <h5>Гарантія</h5>
+              </article>
+            </div>
+          </div>
+          <div class="bg-img">
+            <img src="img/shine.jpg" alt="shine-bg">
+          </div>
+        </section>
+    
+     
+    
+        <section class="blog">
+          <div class="blog-text">
+            <h3>―СТАТТІ―</h3>
+            <h4 id="our-blog">Blog</h4>
+            <p>Тут ми ділимось корисними та цікавими статтями для вас</p>
+          </div>
+          <div class="blog-carousel">
+        <div id="carouse-steps" class="carousel slide" data-ride="carousel">
+          <ol class="carousel-indicators">
+            <li data-target="#carouse-steps" data-slide-to="0" class="active"></li>
+            <li data-target="#carouse-steps" data-slide-to="1"></li>
+            <li data-target="#carouse-steps" data-slide-to="2"></li>
+          </ol>
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img src="img/blog/blog-wind.png" class="d-block" alt="blog-wind">
+              <div class="carousel-caption d-none d-md-block">
+                <a href="blog.html#health-article">
                 <h5>Чи шкідливий кондиціонер для здоров’я?</h5>
-                <p>Значну частину нашого життя ми проводимо в замкнутому просторі: офісі, супермаркетах, квартирі або котеджі.</p>
               </a>
+                <p>Значну частину нашого життя ми проводимо в замкнутому просторі: офісі, супермаркетах, квартирі або котеджі...</p>
+                
+              </div>
+            </div>
+            <div class="carousel-item">
+              <img src="img/blog/blog-grey.png" class="d-block" alt="blog-grey">
+              <div class="carousel-caption d-none d-md-block">
+                <a href="blog.html#sick-article"></a>
+                <h5>Поради, як не захворіти від кондиціонера</h5>
+                  </a>
+                <p>Незважаючи на шалену популярність кондиціонерів, їх і досі бояться постійно вмикати, щоб не захворіти.</p>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <img src="img/blog/blog-sofa.png" class="d-block" alt="blog-sofa">
+              <div class="carousel-caption d-none d-md-block">
+                <a href="blog.html#myth-article">
+                <h5>Міфи про кондиціонери</h5>
+               </a>
+                <p>Серед усієї побутової техніки кондиціонери чи не найбільше обросли величезною кількістю міфів.</p>
+              </div>
             </div>
           </div>
+          <a class="carousel-control-prev" href="#carouse-steps" role="button" data-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="sr-only">Previous</span>
+          </a>
+          <a class="carousel-control-next" href="#carouse-steps" role="button" data-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="sr-only">Next</span>
+          </a>
         </div>
-      </div>
-      <form action="blog.html">
-        <button class="transparent-button" type="submit">ДІЗНАТИСЬ БІЛЬШЕ</button>
-      </form>
-    </section>
-
-    <section class="contacts">
-      <div class="adress">
-        <h3>―CLIMATOP―</h3>
-        <h4>Контакти</h4>
-        <p>Адреса: <span>вул Стрийська 29а</span></p>
-        <p>Години: <span>Понеділок - Субота: 11: 00 - 21: 00</span></p>
-        <p>Контакти: <span>+380 73 50 50 440 kreuzfeuer8768@gmail.com</span></p>
-        <img src="img/leaves.png" alt="leaves">
-      </div>
-      <div class="contact-form ">
-        <h4>Надсилай запитання</h4>
-        <p>Будь ласка, заповніть нижче подану форму і ми якнайшвидче дамо відповідь</p>
-        <form action="YOUR-ADDRESS-HERE" method="POST">
-          <label>
-            <input type="text" placeholder="Ім`я" required name="user-name">
-          </label>
-          <br>
-          <label>
-            <input type="text" placeholder="Номер" required name="user-number">
-          </label>
-          <br>
-          <label>
-            <input type="text" placeholder="E-mail" required name="user-email">
-          </label>
-          <br>
-          <label>
-            <input type="text" placeholder="Ваше повідомлення" required name="user-message">
-          </label>
-          <br>
-          <input type="submit" class="green-button" value="Надіслати">
+        <form action="blog.html">
+          <button class="transparent-button" type="submit">ДІЗНАТИСЬ БІЛЬШЕ</button>
         </form>
       </div>
-    </section>
-
-    <section class="promotion">
-      <div class="bgc_y"></div>
-      <div class="container">
-        <div class="promotion__text">
-          <h4>Акція для нових клієнтів!</h4>
-          <div class="promotion__descr">
-            Знижка <span>20%!</span>на усю нашу продукцію!
+      </section>
+    
+        <section class="contacts">
+          <div class="adress">
+            <h3>―CLIMATOP―</h3>
+            <h4>Контакти</h4>
+            <p>Адреса: <span>вул Стрийська 29а</span></p>
+            <p>Години: <span>Понеділок - Субота: 11: 00 - 21: 00</span></p>
+            <p>Контакти: <span>+380 73 50 50 440 kreuzfeuer8768@gmail.com</span></p>
+            <img src="img/leaves.png" alt="leaves">
           </div>
-        </div>
-        <div class="promotion__timer">
-          <div class="title">Залишилось до кінця акції:</div>
-          <div class="timer">
-            <div class="timer__block">
-              <span id="days">12</span> днів
-            </div>
-            <div class="timer__block">
-              <span id="hours">20</span> годин
-            </div>
-            <div class="timer__block">
-              <span id="minutes">56</span> хвилин
-            </div>
-            <div class="timer__block">
-              <span id="seconds">20</span> секунд
-            </div>
-          </div>
-		</div>
-	</div>
-	</section>
-  </main>
-
-  <footer>
-    <nav class="down_nav">
-      <div class="menu-items">
-        <a href="#main">Головна</a>
-        <a href="#aboutus">Про нас</a>
-        <a href="#our-services">Послуги</a>
-        <a href="#our-products">Каталог</a>
-        <a href="#our-blog">Блог</a>
-        <a href="#contacts" data-toggle="modal" data-target="#products-modal">Зателефонуйте мені</a>
-      </div>
-      <div class="social">
-        <a href="https://www.facebook.com/"><img src="img/icons/network/facebook.svg" alt="facebook"></a>
-        <a href="#"><img src="img/icons/network/instagram.svg" alt="instagram"></a>
-        <a href="#"><img src="img/icons/network/twitter.svg" alt="twitter"></a>
-      </div>
-      <div class="coppy_right">
-        <p>© Created by Nika All rights Reserved</p>
-      </div>
-    </nav>
-  </footer>
-
-  <!-- Modal for call button -->
-  <div class="modal fade" id="products-modal" tabindex="-1" aria-labelledby="products-modalLabel" aria-hidden="true">
-    <div class="modal-dialog">
-      <div class="modal-content">
-        <div class="modal-header">
-          <h5 class="modal-title" id="products-modalLabel">Контактна форма</h5>
-          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-            <span aria-hidden="true">&times;</span>
-          </button>
-        </div>
-        <div class="modal-body">
           <div class="contact-form ">
-            <p>Будь ласка, заповніть нижче подану форму і ми якнайшвидше зателефонуємо </p>
+            <h4>Надсилай запитання</h4>
+            <p>Будь ласка, заповніть нижче подану форму і ми якнайшвидче дамо відповідь</p>
             <form action="YOUR-ADDRESS-HERE" method="POST">
               <label>
                 <input type="text" placeholder="Ім`я" required name="user-name">
@@ -403,71 +316,221 @@
               <label>
                 <input type="text" placeholder="Номер" required name="user-number">
               </label>
+              <br>
+              <label>
+                <input type="text" placeholder="E-mail" required name="user-email">
+              </label>
+              <br>
+              <label>
+                <input type="text" placeholder="Ваше повідомлення" required name="user-message">
+              </label>
+              <br>
+              <input type="submit" class="green-button" value="Надіслати">
             </form>
           </div>
+        </section>
+    
+        <section class="promotion">
+          <div class="bgc_y"></div>
+          <div class="container">
+            <div class="promotion__text">
+              <h4>Акція для нових клієнтів!</h4>
+              <div class="promotion__descr">
+                Знижка <span>20%!</span>на усю нашу продукцію!
+              </div>
+            </div>
+            <div class="promotion__timer">
+              <div class="title">Залишилось до кінця акції:</div>
+              <div class="timer">
+                <div class="timer__block">
+                  <span id="days">12</span> днів
+                </div>
+                <div class="timer__block">
+                  <span id="hours">20</span> годин
+                </div>
+                <div class="timer__block">
+                  <span id="minutes">56</span> хвилин
+                </div>
+                <div class="timer__block">
+                  <span id="seconds">20</span> секунд
+                </div>
+              </div>
         </div>
-        <div class="modal-footer">
-          <button type="button" class="btn btn-secondary" data-dismiss="modal">Вийти</button>
-          <button type="button" class="btn btn-primary">Додати</button>
+      </div>
+      </section>
+      </main>
+    
+      <footer>
+        <nav class="down_nav">
+          <div class="menu-items">
+            <a href="#main">Головна</a>
+            <a href="#aboutus">Про нас</a>
+            <a href="#our-services">Послуги</a>
+            <a href="#our-products">Каталог</a>
+            <a href="#our-blog">Блог</a>
+            <a href="#contacts" data-toggle="modal" data-target="#products-modal">Зателефонуйте мені</a>
+          </div>
+        </div>
+        <hr class="container"
+            style="width:100%; text-align:left; margin: 0px; padding:0px; background-color: white;">
+    </div>
+          <div class="social">
+            <a href="https://www.facebook.com/"><img src="img/icons/network/facebook.svg" alt="facebook"></a>
+            <a href="#"><img src="img/icons/network/instagram.svg" alt="instagram"></a>
+            <a href="#"><img src="img/icons/network/twitter.svg" alt="twitter"></a>
+          </div>
+          <div class="coppy_right">
+            <p>© Created by Nika All rights Reserved</p>
+          </div>
+        </nav>
+      </footer>
+    
+      <!-- Modal for call button -->
+      <div class="modal fade" id="products-modal" tabindex="-1" aria-labelledby="products-modalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="products-modalLabel">Контактна форма</h5>
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body">
+              <div class="contact-form ">
+                <p>Будь ласка, заповніть нижче подану форму і ми якнайшвидше зателефонуємо </p>
+                <form action="YOUR-ADDRESS-HERE" method="POST">
+                  <label>
+                    <input type="text" placeholder="Ім`я" required name="user-name">
+                  </label>
+                  <br>
+                  <label>
+                    <input type="text" placeholder="Номер" required name="user-number">
+                  </label>
+                </form>
+              </div>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-dismiss="modal">Вийти</button>
+              <button type="button" class="btn btn-primary">Додати</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    
+      <!-- Modal for calculating the cost button-->
+      <div class="modal fade" id="calc-modal" tabindex="-1" aria-labelledby="calc-modalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="calc-modalLabel">Прорахунок вартості</h5>
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body">
+              <div class="contact-form ">
+                <p>Будь ласка, заповніть нижче подану форму і ми надішлемо вартість Вашого майбутнього кондиціонеру </p>
+                <form action="YOUR-ADDRESS-HERE" method="POST">
+                  <label>
+                    <input type="text" placeholder="Тип приміщення" required name="user-name">
+                  </label>
+                  <br>
+                  <label>
+                    <input type="text" placeholder="Площа" required name="user-number">
+                  </label>
+                  <label>
+                    <input type="text" placeholder="Висота стелі" required name="user-name">
+                  </label>
+                  <br>
+                  <label>
+                    <input type="text" placeholder="Ім'я" required name="user-name">
+                  </label>
+                  <br>
+                  <label>
+                    <input type="text" placeholder="Email" required name="user-name">
+                  </label>
+                </form>
+              </div>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-dismiss="modal">Вийти</button>
+              <button type="button" class="btn btn-primary">Отримати розрахунок</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    
+    <a class="back_to_top" title="Вгору">&uarr;</a>
+  
+    <!-- Modal Product Info -->
+    <div class="modal fade" id="productInfoModal" tabindex="-1" role="dialog" aria-labelledby="productInfoLabel" aria-hidden="true">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="productInfoLabel">Детальніше</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+              <img class="card-img-top" src="" alt="">
+              <h4 class="card-title"></h4>
+              <p class="card-text"></p>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary btn-close" data-dismiss="modal">Close</button>
+            <button class="btn btn-primary buy" data-id="id">Купити</button>
+          </div>
         </div>
       </div>
     </div>
-  </div>
-
-  <!-- Modal for calculating the cost button-->
-  <div class="modal fade" id="calc-modal" tabindex="-1" aria-labelledby="calc-modalLabel" aria-hidden="true">
-    <div class="modal-dialog">
-      <div class="modal-content">
-        <div class="modal-header">
-          <h5 class="modal-title" id="calc-modalLabel">Прорахунок вартості</h5>
-          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-            <span aria-hidden="true">&times;</span>
-          </button>
-        </div>
-        <div class="modal-body">
-          <div class="contact-form ">
-            <p>Будь ласка, заповніть нижче подану форму і ми надішлемо вартість Вашого майбутнього кондиціонеру </p>
-            <form action="YOUR-ADDRESS-HERE" method="POST">
-              <label>
-                <input type="text" placeholder="Тип приміщення" required name="user-name">
-              </label>
-              <br>
-              <label>
-                <input type="text" placeholder="Площа" required name="user-number">
-              </label>
-              <label>
-                <input type="text" placeholder="Висота стелі" required name="user-name">
-              </label>
-              <br>
-              <label>
-                <input type="text" placeholder="Ім'я" required name="user-name">
-              </label>
-              <br>
-              <label>
-                <input type="text" placeholder="Email" required name="user-name">
-              </label>
-            </form>
+    
+    <!-- Modal Cart -->
+    <div class="modal fade" id="modal-cart" tabindex="-1" role="dialog" aria-labelledby="cartLabel" aria-hidden="true">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="cartLabel">Cart</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
           </div>
-        </div>
-        <div class="modal-footer">
-          <button type="button" class="btn btn-secondary" data-dismiss="modal">Вийти</button>
-          <button type="button" class="btn btn-primary">Отримати розрахунок</button>
+          <div class="modal-body">
+            <div class="cart-product-list-container"></div>
+            <hr>
+            <div class="container">
+              <form class="form-contacts">
+                <div class="form-group row">
+                  <label for="client-name" class="col-4 col-form-label">Your name:</label>
+                  <input class="form-control col-8" type="text" id="client-name" required>
+                </div>
+                <div class="form-group row">
+                  <label for="client-email" class="col-4 col-form-label">Your email:</label>
+                  <input class="form-control col-8" type="email" id="client-email" required>
+                </div>
+              </form>
+            </div>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary btn-close" data-dismiss="modal">Close</button>
+            <button class="btn btn-primary order">Order</button>
+          </div>
         </div>
       </div>
     </div>
-  </div>
 
-<a class="back_to_top" title="Вгору">&uarr;</a>
 
-  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous">
-  </script>
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous">
-  </script>
-  <script src="js/carousel.js"></script>
-  <script src="//code.jquery.com/jquery-1.11.0.min.js"></script>
-  <script src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
-  <script src="slick/slick.min.js"></script>
-  <script src="js/index.js"></script>
+
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>
+    <script defer src="https://use.fontawesome.com/releases/v5.5.0/js/all.js" integrity="sha384-GqVMZRt5Gn7tB9D9q7ONtcp4gtHIUEW/yG7h98J7IpE3kpi+srfFyyB/04OV6pG0" crossorigin="anonymous"></script>
+    <script src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+    <script async src="js/alert-window.js"></script>
+    <script defer src="js/products-service.js"></script>
+    <script defer src="js/cart.js"></script>
+    <script defer src="js/product-list.js"></script>    
+    <script defer src="js/index.js"></script>
 </body>
 
 </html>
